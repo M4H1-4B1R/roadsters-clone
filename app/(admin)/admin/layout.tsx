@@ -16,7 +16,7 @@ import logoutAction from "./logout-action";
 
 const navItems = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
-  { label: "Orders", href: "/admin/orders", icon: ShoppingCart, disabled: true },
+  { label: "Orders", href: "/admin/orders", icon: ShoppingCart },
   { label: "Products", href: "/admin/products", icon: Package },
   { label: "Categories", href: "/admin/categories", icon: FolderTree },
 ];
@@ -43,26 +43,16 @@ function Sidebar() {
         <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider px-3 pt-2 pb-1">
           Main Menu
         </p>
-        {navItems.map((item) =>
-          item.disabled ? (
-            <span
-              key={item.href}
-              className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-400 cursor-not-allowed opacity-60"
-            >
-              <item.icon size={18} />
-              {item.label}
-            </span>
-          ) : (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
-            >
-              <item.icon size={18} />
-              {item.label}
-            </Link>
-          )
-        )}
+        {navItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+          >
+            <item.icon size={18} />
+            {item.label}
+          </Link>
+        ))}
 
         <p className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider px-3 pt-4 pb-1">
           Coming Soon
