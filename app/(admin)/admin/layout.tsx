@@ -23,11 +23,11 @@ const navItems = [
 	{ label: "Banners", href: "/admin/banners", icon: Image },
 	{ label: "Gallery Swipers", href: "/admin/swipers", icon: Images },
 	{ label: "Coupons", href: "/admin/coupons", icon: Percent },
+	{ label: "Newsletters", href: "/admin/newsletters", icon: Mail },
 ];
 
 const soonItems = [
 	{ label: "Website Sections", icon: Layout },
-	{ label: "NewsLetters", icon: Mail },
 ];
 
 function Sidebar() {
