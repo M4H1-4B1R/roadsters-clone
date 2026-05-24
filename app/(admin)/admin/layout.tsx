@@ -36,7 +36,7 @@ function Sidebar() {
 		<aside className="fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200 flex flex-col z-50">
 			<div className="p-4 border-b border-gray-100">
 				<h1 className="text-base font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent tracking-tight">
-					Clicks E-Commerce Panel
+					Roadsters E-Commerce Panel
 				</h1>
 			</div>
 
